@@ -14,8 +14,4 @@ export const songNotes = songIntro.concat(
     songVerse1,
     songChorus1,
     songSolo1,
-    songVerse2,
-    songChorus2,
-    songSolo2,
-    songBridge
 );
