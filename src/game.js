@@ -8,8 +8,8 @@ import Instructions from './instructions';
 
 class Game {
     constructor() {
-        this.noteInterval = 720;
-        this.musicDelay = 2000;
+        this.noteInterval = 347.72;
+        this.musicDelay = 1660;
         this.key = new Key();
         this.instructions = new Instructions();
         this.started = false;
@@ -69,7 +69,7 @@ class Game {
     addMusic() {
         this.music = new Audio(this.musicDelay);
         this.music.startMusic();
-        setTimeout(this.music.fadeOut.bind(this.music), 213000);
+        setTimeout(this.music.fadeOut.bind(this.music), 432000);
     }
 
 }

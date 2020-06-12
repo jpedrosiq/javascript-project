@@ -1,8 +1,10 @@
-class Key {
+// KEY LOGIC ADAPTED FROM https://github.com/nklsrh/BuildNewGames_ThreeJSGame/blob/gh-pages/Scripts/keyboard.js
+// Will use this Key.isDown boolean to test if it is being pressed at the right time.
 
+class Key {
     constructor() {
         this._pressed = {};
-        this._pressedVisual = {};
+        this._pressedVisually = {};
         this.pos = {
             1: 65,
             2: 83,
@@ -10,36 +12,21 @@ class Key {
             4: 75,
             5: 76
         };
-        this.A = 65;
-        this.S = 83;
-        this.J = 74;
-        this.K = 75;
-        this.L = 76;
-        
+        this.A = 65;  // songNote.pos: 1
+        this.S = 83;  // songNote.pos: 2
+        this.J = 74;  // songNote.pos: 3
+        this.K = 75;  // songNote.pos: 4
+        this.L = 76;  // songNote.pos: 5
+
         this.addKeyListeners();
     }
 
-    onKeyDown(e) {
-        this._pressed[e.keyCode] = true;
-        this._pressedVisual[e.keyCode] = true;
-    }
-
-    onKeyUp(e) {
-        delete this._pressedVisual[e.keyCode];
-        let buffer = 300;   // CHANGE IT TO TEST IT 
-        setTimeout( () => {
-            delete this._pressed[e.keyCode];
-        }, buffer);
-    }
-
     addKeyListeners() {
-        window.addEventListener("keydown", (e) => {
-            this.onKeyDown(e);
-            //keydown is fired whenever a key is pressed down
+        window.addEventListener('keydown', (e) => {
+            this.onKeydown(e);
         });
-        window.addEventListener("keyup", (e) => {
-            this.onKeyUp(e);
-            //keyup is fired whenever a key is released
+        window.addEventListener('keyup', (e) => {
+            this.onKeyup(e);
         });
     }
 
@@ -47,8 +34,21 @@ class Key {
         return this._pressed[keyCode];
     }
 
-    isDownVisual(keyCode) {
-        return this._pressedVisual[keyCode];
+    isDownVisually(keyCode) {
+        return this._pressedVisually[keyCode];
+    }
+
+    onKeydown(e) {
+        this._pressed[e.keyCode] = true;
+        this._pressedVisually[e.keyCode] = true;
+    }
+
+    onKeyup(e) {
+        delete this._pressedVisually[e.keyCode];
+        let buffer = 300; // buffer for leniency
+        setTimeout(() => {
+            delete this._pressed[e.keyCode];
+        }, buffer);
     }
 
 }

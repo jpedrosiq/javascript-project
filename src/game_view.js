@@ -107,7 +107,7 @@ class GameView {
     }
 
     setNoteAttributes() {
-        this.note.vel = .75;
+        this.note.vel = 0.77;
 
         this.note.yVel = this.note.vel * (this.yEndPoint - this.yStartPoint) / 100;
         this.note.zVel = this.note.vel * (this.zEndPoint - this.zStartPoint) / 100;
@@ -176,20 +176,20 @@ class GameView {
       );
       let lag = 0;
 
-      if (songNote.m > 94) {
-        lag = 12.5 * songNote.m;
-        time += lag;
-      } else if (songNote.m > 79) {
-        lag = 10 * songNote.m;
-        time += lag;
-      } else if (songNote.m > 71) {
-        lag = 7.5 * songNote.m;
-        time += lag;
-      }
-      else if (songNote.m > 48) {
-        lag = 5 * songNote.m;
-        time += lag;
-      }
+      // if (songNote.m > 94) {
+      //   lag = 12.5 * songNote.m;
+      //   time += lag;
+      // } else if (songNote.m > 79) {
+      //   lag = 10 * songNote.m;
+      //   time += lag;
+      // } else if (songNote.m > 71) {
+      //   lag = 7.5 * songNote.m;
+      //   time += lag;
+      // }
+      // else if (songNote.m > 48) {
+      //   lag = 5 * songNote.m;
+      //   time += lag;
+      // }
 
       // CREATE HOLDS
       if (songNote.hold) {

@@ -25,7 +25,7 @@ class GameNotes {
     }
 
     setNoteCheck(songNote, time) {
-        let timeDelay = 260 + this.musicDelay + time;
+        let timeDelay = 500 + this.musicDelay + time;
 
         setTimeout(
             () => this.checkNote(songNote),
