@@ -61,7 +61,7 @@ class GameView {
         let backgroundGeometry = new THREE.BoxGeometry( 2000, 1000, 1000);
         let backgroundMaterials = ["", "", "", "", "",
             new THREE.MeshPhongMaterial( {
-                map: new THREE.TextureLoader().load('stage.jpeg'),
+              map: new THREE.TextureLoader().load('https://i.imgur.com/T0ALh6p.jpg?1'),
                 side: THREE.DoubleSide
             })
     ];

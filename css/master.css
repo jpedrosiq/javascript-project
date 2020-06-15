@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
+  
 }
 
 
@@ -11,6 +12,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 .game-details {
@@ -88,20 +90,21 @@ body {
   flex-direction: column;
   padding: 20px;
   font-weight: 700;
+  
 }
 
 .game-control-panel button {
   width: 120px;
-  height: 25px;
+  height: 45px;
   border-radius: 7px;
   margin-bottom: 5px;
   border: 1px solid rgb(255, 255, 255);
-  background: #5c5c5c;
   font-family: 'Rock Salt';
+  background: #cfcfcf;
 }
 
 .game-control-panel button:hover {
-  background: #cfcfcf;
+  background: #5c5c5c;
   cursor: pointer;
 }
 
@@ -265,4 +268,10 @@ body {
 /* LEAVE AT BOTTOM OF CSS FILE */
 .hidden {
   display: none;
+}
+
+
+.background-img {
+  position: relative;
+  
 }
