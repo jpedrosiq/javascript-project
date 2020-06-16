@@ -69,7 +69,7 @@ class Game {
     addMusic() {
         this.music = new Audio(this.musicDelay);
         this.music.startMusic();
-        setTimeout(this.music.fadeOut.bind(this.music), 158000);
+        setTimeout(this.music.fadeOut.bind(this.music), 118000);
     }
 
 }

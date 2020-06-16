@@ -176,20 +176,7 @@ class GameView {
       );
       let lag = 0;
 
-      // if (songNote.m > 94) {
-      //   lag = 12.5 * songNote.m;
-      //   time += lag;
-      // } else if (songNote.m > 79) {
-      //   lag = 10 * songNote.m;
-      //   time += lag;
-      // } else if (songNote.m > 71) {
-      //   lag = 7.5 * songNote.m;
-      //   time += lag;
-      // }
-      // else if (songNote.m > 48) {
-      //   lag = 5 * songNote.m;
-      //   time += lag;
-      // }
+     
 
       // CREATE HOLDS
       if (songNote.hold) {
