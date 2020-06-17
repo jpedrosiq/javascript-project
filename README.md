@@ -6,7 +6,7 @@ Guitar Legend is a game based on the popular videogame Guitar Hero, where the pl
 * Demo: [Live Demo](https://jpedrosiq.github.io/)
 
 ## Technologies
-* Vanilla JavaScript for game logic
+* Vanilla JavaScript for game logic 
 * Webpack for compiling JavaScript modules
 * Three.js library for all 3D animations throughout the game
 * AWS S3 for storing the song file
