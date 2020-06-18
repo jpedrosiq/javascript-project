@@ -14,7 +14,7 @@ Guitar Legend is a game based on the popular videogame Guitar Hero, where the pl
 ## Features
 * Play song on keyboard by pressing the right keys at the right timing
 * Display player's current streak, along with the maximum streak 
-* Get bonus score multiplier based on player's note streak
+* Get bonus score multiplier based on player's note streak 
 * Display Rock Meter, allowing players to see their progress
 
 ## Displaying current and maximum streak
