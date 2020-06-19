@@ -67,7 +67,7 @@ Guitar Legend is a game based on the popular videogame Guitar Hero, where the pl
         this.maxStreakEl.innerHTML = `Max Streak: ${this.maxStreak}`;
         this.streakEl.innerHTML = `Streak: ${this.streak}`;
 
-    }
+    } 
 
 ```
 
