@@ -70,7 +70,7 @@ Guitar Legend is a game based on the popular videogame Guitar Hero, where the pl
     } 
 
 ```
-   
+    
 ## Song notes creation       
 * Each note was implemented on the code based on the measure(m), beat(t) and position(pos). For the specific song, the amount of beats per measure used was 8bpm. Every position depends on the beat to check if the game note will match the song note.
 * Beyond that, an optional key "hold" was implemented, in case there is a long note that needs to keep the key pressed for a while.  
