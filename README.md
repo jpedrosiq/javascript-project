@@ -1,6 +1,6 @@
 # Guitar Legend
 
-Guitar Legend is a game based on the popular videogame Guitar Hero, where the player must hit the right keys on the keyboard at the right time according to the notes being displayed. Every successful note hit, gives the player points, and these can be multiplied based on the player's note streak. This app was created using JavaScript and the Three.js library.               
+Guitar Legend is a game based on the popular videogame Guitar Hero, where the player must hit the right keys on the keyboard at the right time according to the notes being displayed. Every successful note hit, gives the player points, and these can be multiplied based on the player's note streak. This app was created using JavaScript and the Three.js library.                
  
 ## Live site demo
 * Demo: [Live Demo](https://jpedrosiq.github.io/Guitar-Legend-JavaScript-Game/)
